@@ -17,7 +17,6 @@ import img13 from '@public/assets/images/img13.jpg'
 import img14 from '@public/assets/images/img14.jpg'
 import img15 from '@public/assets/images/img15.jpg'
 import img16 from '@public/assets/images/img16.jpeg'
-import img17 from '@public/assets/images/img17.jpg'
 import img18 from '@public/assets/images/img18.jpeg'
 import img19 from '@public/assets/images/img19.jpeg'
 import img20 from '@public/assets/images/img20.jpeg'
@@ -85,7 +84,6 @@ export default function Gallery() {
     { src: img14, animation: 'animate-from-bottom' },
     { src: img15, animation: 'animate-from-right' },
     { src: img16, animation: 'animate-from-left' },
-    { src: img17, animation: 'animate-from-bottom' },
   ];
 
   const imageRefs = useRef([]);
