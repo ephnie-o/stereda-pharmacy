@@ -4,7 +4,10 @@ import Footer from '@components/Footer'
 
 export const metadata = {
     title: 'Stereda Pharmacy Home: Providing top-quality healthcare services in Ghana.',
-    description: 'Stereda Pharmacy Website'
+    description: 'Stereda Pharmacy Website',
+    openGraph: {
+        images: '/assets/images/logo.jpg',
+      },
 }
 
 const RootLayout = ({children}) => {
