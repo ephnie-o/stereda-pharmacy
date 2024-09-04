@@ -6,7 +6,7 @@ export const metadata = {
     title: 'Stereda Pharmacy Home: Providing top-quality healthcare services in Ghana.',
     description: 'Stereda Pharmacy Website',
     openGraph: {
-        images: '/assets/images/logo.jpg',
+        images: '/logo.jpg',
       },
 }
 
