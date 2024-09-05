@@ -19,14 +19,20 @@ export default function Bandages() {
 
   // Function to handle scroll to section
   const scrollToSection = (ref) => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
+    const offset = 50; // Adjust this value based on your navbar height
+    const elementPosition = ref.current.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
   };
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Left-side Vertical Navigation Menu */}
       <nav className="bg-white shadow-md py-4 px-4 flex flex-col space-y-2">
-        <button onClick={() => scrollToSection(white2Ref)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">White Elastic Bandage 2-Inch</button>
+        <button onClick={() => scrollToSection(white2Ref)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">White Elastic Bandage 2-Inch</button>
         <button onClick={() => scrollToSection(white4Ref)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">White Elastic Bandage 4-Inch</button>
         <button onClick={() => scrollToSection(white6Ref)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">White Elastic Bandage 6-Inch</button>
         <button onClick={() => scrollToSection(brown2Ref)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">Brown Elastic Bandage 2-Inch</button>

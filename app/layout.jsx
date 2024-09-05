@@ -1,6 +1,7 @@
 import '@styles/globals.css'
 import Navbar from '@components/Navbar'
 import Footer from '@components/Footer'
+import GoTop from '@components/GoTop'
 
 export const metadata = {
     metadataBase: new URL('https://steredapharmacy.netlify.app/'),
@@ -22,6 +23,7 @@ const RootLayout = ({children}) => {
                 <main className="app">
                     <Navbar />
                     {children}
+                    <GoTop />
                     <Footer />
                 </main>
             </body>

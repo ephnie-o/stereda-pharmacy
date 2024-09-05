@@ -1,37 +1,31 @@
 'use client';
 import Image from 'next/image';
+import Scroll from './Scroll';
 import { useRef } from 'react';
 import sterecol from '@public/assets/images/sterecol.jpeg';
 
 export default function Sterecol() {
-  // Refs for sections
-  const benefitsRef = useRef(null);
-  const ingredientsRef = useRef(null);
+  const compositionRef = useRef(null);
   const usageRef = useRef(null);
   const precautionsRef = useRef(null);
+  const dosageRef = useRef(null);
   const sideEffectsRef = useRef(null);
   const storageRef = useRef(null);
-  const contactRef = useRef(null);
+  const infoRef = useRef(null);
 
-  // Function to handle scroll to section
-  const scrollToSection = (ref) => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const refs = {
+    compositionRef,
+    usageRef,
+    precautionsRef,
+    dosageRef,
+    sideEffectsRef,
+    storageRef,
+    infoRef
+  }
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Left-side Vertical Navigation Menu */}
-      <nav className="bg-white shadow-md py-4 px-4 flex flex-col space-y-1">
-        <button onClick={() => scrollToSection(benefitsRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Health Benefits</button>
-        <button onClick={() => scrollToSection(ingredientsRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Ingredients</button>
-        <button onClick={() => scrollToSection(usageRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Usage Instructions</button>
-        <button onClick={() => scrollToSection(precautionsRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">Precautions</button>
-        <button onClick={() => scrollToSection(sideEffectsRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">Possible Side Effects</button>
-        <button onClick={() => scrollToSection(storageRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Storage Information</button>
-        <button onClick={() => scrollToSection(contactRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">Contact Information</button>
-      </nav>
-
-
+      <Scroll refs={refs}/>
       <div className="container mx-auto px-4">
         {/* Product Image and Title */}
         <div className="flex flex-col md:flex-row items-center mb-8">
@@ -51,8 +45,8 @@ export default function Sterecol() {
         </div>
 
         {/* Ingredients Section */}
-        <section ref={ingredientsRef} className="mb-8">
-          <h2 className="text-2xl font-bold text-green-700 mb-4">Ingredients</h2>
+        <section ref={compositionRef} className="mb-8">
+          <h2 className="text-2xl font-bold text-green-700 mb-4">Composition</h2>
           <p className="text-zinc-600 mb-2">Each Serving (1 Gummy) Contains:</p>
           <ul className="list-disc list-inside text-zinc-600 space-y-2">
             <li>Melatonin: 10 mg</li>
@@ -61,23 +55,19 @@ export default function Sterecol() {
           </ul>
         </section>
 
-        {/* Health Benefits Section */}
-        <section ref={benefitsRef} className="mb-8">
-          <h2 className="text-2xl font-bold text-green-700 mb-4">Health Benefits</h2>
+        {/* Usage Information */}
+        <section ref={usageRef} className="mb-8">
+          <h2 className="text-2xl font-bold text-green-700 mb-4">What is Sterecol Gummies and What is it Used For?</h2>
+          <p className="text-zinc-600 mb-4">
+            Sterecol gummies contains Melatonin, Ashwagandha extract and Lemon balm.
+          </p>
+          <h2 className="text-xl font-bold text-green-700 mb-4">Key Benefits</h2>
           <ul className="list-disc list-inside text-zinc-600 space-y-2">
             <li>Regulates sleep-wake cycles and promotes restful sleep.</li>
             <li>Relieves anxiety and stress for a calm and peaceful mind.</li>
             <li>Supports deep sleep, helping you fall asleep faster.</li>
             <li>Elevates mood and keeps the mind calm and alert.</li>
           </ul>
-        </section>
-
-        {/* Usage Instructions */}
-        <section ref={usageRef} className="mb-8">
-          <h2 className="text-2xl font-bold text-green-700 mb-4">Usage Instructions</h2>
-          <p className="text-zinc-600 mb-4">
-            Take one gummy daily, preferably 30 minutes before bedtime, or as directed by a healthcare professional. Do not exceed the recommended dosage.
-          </p>
         </section>
 
         {/* Precautions Section */}
@@ -89,6 +79,14 @@ export default function Sterecol() {
             <li>Avoid driving or operating machinery if you feel drowsy after consumption.</li>
             <li>Not recommended for children under 18 years of age.</li>
           </ul>
+        </section>
+
+        {/* Dosage Information */}
+        <section ref={dosageRef} className="mb-8">
+          <h2 className="text-2xl font-bold text-green-700 mb-4">How to Take Sterecol Gummies?</h2>
+          <p className="text-zinc-600 mb-4">
+            Take one gummy daily, preferably 30 minutes before bedtime, or as directed by a healthcare professional. Do not exceed the recommended dosage.
+          </p>
         </section>
 
         {/* Possible Side Effects Section */}
@@ -114,7 +112,7 @@ export default function Sterecol() {
         </section>
 
         {/* Contact Information */}
-        <section ref={contactRef} className="mb-8">
+        <section ref={infoRef} className="mb-8">
           <h2 className="text-2xl font-bold text-green-700 mb-4">Further Information</h2>
           <p className="text-zinc-600">For more information, contact:</p>
           <p className="text-zinc-600">Stereda Pharmaceuticals Ltd, No ANT 7/2 Aplaku New Town, Weija Accra, Ghana</p>

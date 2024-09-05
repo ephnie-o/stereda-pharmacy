@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Scroll from './Scroll';
 import { useRef } from 'react';
 import steremed from '@public/assets/images/steremed.jpg';
 
@@ -13,25 +14,19 @@ export default function Sterevite() {
   const storageRef = useRef(null);
   const infoRef = useRef(null);
 
-  // Function to handle scroll to section
-  const scrollToSection = (ref) => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const refs = {
+    compositionRef,
+    usageRef,
+    precautionsRef,
+    dosageRef,
+    sideEffectsRef,
+    storageRef,
+    infoRef
+  }
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Navigation Menu */}
-      <nav className="bg-white shadow-md py-4 px-4">
-        <div className="container flex flex-col space-y-1">
-          <button onClick={() => scrollToSection(compositionRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Composition</button>
-          <button onClick={() => scrollToSection(usageRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Usage</button>
-          <button onClick={() => scrollToSection(precautionsRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Precautions</button>
-          <button onClick={() => scrollToSection(dosageRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Dosage</button>
-          <button onClick={() => scrollToSection(sideEffectsRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Side Effects</button>
-          <button onClick={() => scrollToSection(storageRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Storage</button>
-          <button onClick={() => scrollToSection(infoRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Further Info</button>
-        </div>
-      </nav>
+      <Scroll refs={refs} />
 
       <div className="container mx-auto px-4">
         {/* Product Image and Title */}
