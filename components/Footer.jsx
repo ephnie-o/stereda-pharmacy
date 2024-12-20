@@ -44,7 +44,7 @@ export default function Navbar() {
                         <p>Facebook</p>
                     </Link>
                     <br />
-                    <Link href="#" className='flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
+                    <Link href="mailto:steredapharmaceuticals@gmail.com" className='flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>
                         <MailIcon className="w-6 mr-1"/>
                         <p>Mail</p>
                     </Link>
