@@ -41,7 +41,7 @@ export default function Sterevite() {
             />
           </div>
           <div className="w-full md:w-2/3 mt-4 md:mt-0 md:ml-8 text-center md:text-left">
-            <h1 className="text-4xl font-bold text-green-700 mb-4">Sterevite Syrup</h1>
+            <h1 className="text-4xl font-bold text-green-700 mb-4">Steremed Syrup</h1>
             <p className="text-lg text-zinc-600">L-CARNOSINE WITH DHA SYRUP</p>
           </div>
         </div>

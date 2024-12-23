@@ -14,8 +14,8 @@ export default function Scroll({ refs }) {
     };
 
     return (
-        <nav className="bg-white shadow-md py-4 px-4 flex flex-col space-y-2">
-            <button onClick={() => scrollToSection(refs.compositionRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition">Composition</button>
+        <nav className="hidden bg-white shadow-md py-4 px-4 lg:flex lg:space-x-4 xs:hidden">
+            <button onClick={() => scrollToSection(refs.compositionRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">Composition</button>
             <button onClick={() => scrollToSection(refs.usageRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">Usage</button>
             <button onClick={() => scrollToSection(refs.precautionsRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">Precautions</button>
             <button onClick={() => scrollToSection(refs.dosageRef)} className="bg-green-700 text-white py-2 px-4 rounded text-left hover:bg-green-600 transition mb-2">Dosage</button>

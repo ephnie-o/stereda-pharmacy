@@ -4,15 +4,43 @@
     <priority>1</priority>
   </url>
   <url>
+    <loc>https://steredapharmacy.com/products</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steredapharmacy.com/products/bandages</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steredapharmacy.com/products/sterecol</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steredapharmacy.com/products/steremed</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steredapharmacy.com/products/sterevite</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steredapharmacy.com/products/steredex-chesty-cough</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steredapharmacy.com/products/steredex-cough-suppressant</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://steredapharmacy.com/products/steredex-ls-expectorant</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://steredapharmacy.com/shopnow</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://steredapharmacy.com/about</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://steredapharmacy.com/products</loc>
     <priority>0.8</priority>
   </url>
   <url>
