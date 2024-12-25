@@ -13,7 +13,7 @@ export const metadata = {
           url: 'https://www.steredapharmacy.com/assets/images/steredexsupp200ml.jpeg',
           width: 800,
           height: 600,
-          alt: 'teredex Cough Suppressant Syrup'
+          alt: 'Steredex Cough Suppressant Syrup'
         }
       ]
     },
