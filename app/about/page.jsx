@@ -1,4 +1,4 @@
-import AboutPage from '@components/about/AboutPage'
+import AboutPage from "@components/about/About";
 
 export const metadata = {
     title: 'About Stereda Pharmacy Ghana: Learn more about Stereda Pharmacy.',

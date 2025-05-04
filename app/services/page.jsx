@@ -1,4 +1,4 @@
-import ServicesPage from '@components/services/ServicesPage'
+import ServicesPage from "@components/services/Services"
 
 export const metadata = {
     title: 'Our Services - Stereda Pharmacy: Explore the wide range of professional healthcare services.',

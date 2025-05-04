@@ -1,4 +1,4 @@
-import ContactPage from "@components/contactus/ContactPage";
+import ContactPage from "@components/contactus/Contact";
 
 export const metadata = {
     title: 'Contact Us - Stereda Pharmacy: Get in touch with Stereda Pharmaceuticals Limited',

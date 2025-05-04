@@ -1,4 +1,4 @@
-import GalleryPage from '@components/gallery/GalleryPage';
+import GalleryPage from "@components/gallery/Gallery"
 
 export const metadata = {
     title: 'Gallery - Stereda Pharmacy: Explore Our Gallery',
