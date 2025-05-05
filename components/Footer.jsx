@@ -206,7 +206,7 @@ export function Footer() {
             <ul className="space-y-3 text-xs">
               <li>No. ANT 7/2 Aplaku Newtown Weija Accra, Opp. Petrosol Filling Station, Block factory-Kasoa Rd</li>
               <li>+233 249 009 988</li>
-              <li><Link href="mailto:steredapharmaceuticals@gmail.com" className="hover:text-white">steredapharmacy@gmail.com</Link></li>
+              <li><Link href="mailto:steredapharmaceuticals@gmail.com" className="hover:text-white">steredapharmaceuticals@gmail.com</Link></li>
             </ul>
             <div className="flex space-x-4 mt-4 justify-center">
               <Link href="https://web.facebook.com/steredapharmaceuticals" target="_blank" className="hover:text-white">

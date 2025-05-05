@@ -24,7 +24,7 @@ export function PromoBanner() {
                 <Mail className="text-gray-50" />
                     <div>
                         <div className="text-sm text-gray-50 tracking-wide">Email Us</div>
-                        <div className="font-medium break-words text-sm text-[#2d3738]">steredapharmacy@gmail.com</div>
+                        <div className="font-medium break-words text-sm text-[#2d3738]">steredapharmaceuticals@gmail.com</div>
                     </div>
                 </Link>
                     
