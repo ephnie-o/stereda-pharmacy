@@ -34,7 +34,7 @@ const Steredex = () => {
     return (
         <div className="bg-gray-100 py-8">
             <section className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold text-center text-zinc-700 mb-8">Our Products</h1>
+                <h1 className="text-3xl font-bold text-center text-zinc-700 mb-8">Steredex Cough Syrups</h1>
                 {products.map((product, index) => (
                     <Animation key={index} animationClass={product.animation}>
                         <div className={`flex flex-col md:flex-row mt-12`}>

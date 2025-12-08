@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import { useState, useRef } from 'react';
 import Link from 'next/link';
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+
 
 // Define categories and gallery items
 const categories = [
@@ -87,6 +89,12 @@ const galleryItems = [
     { src: "/assets/images/Zeoxon.jpeg", alt: "Zeoxon-CZ Effervescent", category: 'Products',},
     { src: "/assets/images/Zeoxon2.jpeg", alt: "Zeoxon-CZ Effervescent", category: 'Products', span: 'sm:row-span-2'},
     { src: "/assets/images/Zeoxon4.jpeg", alt: "Zeoxon-CZ Effervescent", category: 'Products', span: 'lg:col-span-2, md:col-span-2' },
+    { src: "/assets/images/stepac.jpeg", alt: "Stepac Tablets", category: 'Products', span: 'sm:col-span-2'},
+    { src: "/assets/images/stepac2.jpeg", alt: "Stepac Tablets", category: 'Products',},
+    { src: "/assets/images/magalin.jpeg", alt: "Magalin Capsules", category: 'Products',},
+    { src: "/assets/images/magalin2.jpeg", alt: "Magalin Capsules", category: 'Products',},
+    { src: "/assets/images/steree-l.jpeg", alt: "Steree-L Syrup", category: 'Products', span: 'sm:row-span-2'},
+    { src: "/assets/images/steree-l2.jpeg", alt: "Steree-L Syrup", category: 'Products', span: 'lg:col-span-2, md:col-span-2' },
 ];
 
 export default function GalleryPage() {
@@ -153,6 +161,26 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Grid */}
+      <div className="grid grid-cols-1 mb-6 mt-6">
+        {/* Video Card - spans full width */}
+        <Card className="overflow-hidden">
+        
+        <div className="relative w-full">
+            <video
+                ref={videoRef}
+                autoPlay
+                muted
+                controls
+                playsInline
+                className="w-full h-auto max-h-[90vh] object-contain"
+            >
+                <source src="/assets/images/clip.mp4" type="video/mp4" />
+            </video>
+        </div>
+        
+        
+        </Card>
+    </div>
       <section className="w-full mt-8 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 auto-rows-[minmax(200px,auto)]">
           {filteredItems.map((item, idx) => (

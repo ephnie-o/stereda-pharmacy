@@ -31,9 +31,12 @@ import steremed from '@public/assets/images/steremed.jpg'
 import steredexchesty from '@public/assets/images/steredexchesty.jpeg'
 import steredexls from '@public/assets/images/steredexls.jpeg'
 import steredexsupp from '@public/assets/images/steredexsupp.jpeg'
-import steredexls200ml from '@public/assets/images/steredexls200ml.jpeg'
-import steredexsupp200ml from '@public/assets/images/steredexsupp200ml.jpeg'
-import steredexsupp100ml from '@public/assets/images/steredexsupp100ml.jpeg'
+import stereel from '@public/assets/images/steree-l.jpeg'
+import stereel2 from '@public/assets/images/steree-l2.jpeg'
+import stepac from '@public/assets/images/stepac.jpeg'
+import stepac2 from '@public/assets/images/stepac2.jpeg'
+import magalin from '@public/assets/images/magalin.jpeg'
+import magalin2 from '@public/assets/images/magalin2.jpeg'
 import whitebandage2 from '@public/assets/images/whitebandage2".jpeg'
 import whitebandage4 from '@public/assets/images/whitebandage4".jpeg'
 import whitebandage6 from '@public/assets/images/whitebandage6".jpeg'
@@ -61,6 +64,12 @@ export default function GalleryPage() {
         { src: steredexls, animation: 'animate-from-left' },
         { src: steredexchesty, animation: 'animate-from-bottom' },
         { src: steredexsupp, animation: 'animate-from-right' },
+        { src: stereel, animation: 'animate-from-left' },
+        { src: stereel2, animation: 'animate-from-bottom' },
+        { src: stepac, animation: 'animate-from-right' },
+        { src: stepac2, animation: 'animate-from-left' },
+        { src: magalin, animation: 'animate-from-bottom' },
+        { src: magalin2, animation: 'animate-from-right' },
         { src: whitebandage2, animation: 'animate-from-left' },
         { src: whitebandage4, animation: 'animate-from-bottom' },
         { src: whitebandage6, animation: 'animate-from-right' },
